@@ -16,15 +16,15 @@ jobs:
         include:
           - os: ubuntu-latest
             targets: deb
-            artifact: OpenMAIC_0.1.1_amd64.deb
+            artifact: OpenMAIC_0.2.0_amd64.deb
             rust-target: x86_64-unknown-linux-gnu
           - os: macos-latest
             targets: dmg
-            artifact: OpenMAIC_0.1.1_aarch64.dmg
+            artifact: OpenMAIC_0.2.0_aarch64.dmg
             rust-target: aarch64-apple-darwin
           - os: windows-latest
             targets: nsis
-            artifact: OpenMAIC_0.1.1_x64-setup.exe
+            artifact: OpenMAIC_0.2.0_x64-setup.exe
             rust-target: x86_64-pc-windows-msvc
 
     runs-on: ${{ matrix.os }}
