@@ -72,7 +72,7 @@ jobs:
           tagName: ${{ github.ref_name }}
           releaseName: 'OpenMAIC Desktop ${{ github.ref_name }}'
           releaseBody: 'See [CHANGELOG.md](https://github.com/cccczl02/OpenMAIC/blob/main/CHANGELOG.md) for details.'
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
 
       - name: Upload artifact
